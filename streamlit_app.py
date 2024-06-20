@@ -12,6 +12,8 @@ st.write("The name on your Smoothie wille be :", name_on_order)
 
 cnx=st.connection("snowflakecnx", type="snowflake")
 if cnx:
+    st.write("CNX OK")
+else:
     st.write("CNX KO")
 #st.connection("snowflake")
 session =cnx.session()
